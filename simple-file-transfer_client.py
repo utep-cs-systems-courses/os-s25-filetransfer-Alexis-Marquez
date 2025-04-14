@@ -10,7 +10,7 @@ def send_file(file_path, server_address):
         print("File sent successfully.")
 
 def main():
-    server_address = ('localhost', 3311)
+    server_address = ('localhost', 50000)
     print("Enter path of file to send:")
     file_path = input().strip()
     send_file(file_path, server_address)

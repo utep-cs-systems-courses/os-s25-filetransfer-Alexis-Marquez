@@ -41,7 +41,7 @@ def read_n_bytes(fd, num_bytes):
 def create(files, writeToFd):
     output_file = b''
 
-    for i in range(2, len(files)):
+    for i in range(0, len(files)):
         curr_file = os.open(files[i], os.O_RDONLY)
 
         filename = files[i]
